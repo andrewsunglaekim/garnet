@@ -4,6 +4,11 @@ class GroupsController < ApplicationController
   def index
   end
 
+  def names
+    @group = Group.find(params[:group_id])
+    @students = @group.memberships.where(is_admin: false).map{|membership| membership.user}
+  end
+
   def admin_dashboard group
     @group = group
     @students = @group.memberships.where(is_admin: false)

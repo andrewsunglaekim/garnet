@@ -1,0 +1,9 @@
+<h2>Students in this <%= @group.title %></h2>
+<div class="students">
+<% @students.each do |student| %>
+  <div class="student">
+    <h3><%= user.name %></h3>
+    <img src="<%= user.image_url %>" alt="<%= user.name %>">
+  </div>
+<% end %>
+</div>
