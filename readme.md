@@ -1,5 +1,5 @@
 [![Travis](https://travis-ci.org/ga-dc/garnet.svg?branch=master)](https://travis-ci.org/ga-dc/garnet/)
-
+Test Travis!
 # Garnet
 
 ## Local Setup
@@ -50,7 +50,7 @@ If they sign up *without* Github, they can update their username, password, e-ma
 
 The "Group" model inherits from a "Tree" model, which allows nesting -- that is, for a Group to have child Groups and a parent Group.
 
-# User roles in a specific group 
+# User roles in a specific group
 
 - **Owner**: A user with a physical membership to a group where `membership.is_owner == true`
 - **Nonowner**: A user with a physical membership to a group where `membership.is_owner == false`
@@ -78,4 +78,3 @@ New Relic monitors the app and provides metrics.  They are available in developm
 ## RSpec
 
 Use it!
-
